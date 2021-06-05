@@ -2,6 +2,7 @@ package kodlamaio.Hrms.apicontrollers;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,6 +21,7 @@ import kodlamaio.Hrms.ettities.concretes.JobAdvertisement;
 public class JobAdvertisementsController {
 	private JobAdvertisementService jobAdvertisementService;
 	
+	@Autowired
 	public JobAdvertisementsController(JobAdvertisementService jobAdvertisementService) {
 		super();
 		this.jobAdvertisementService = jobAdvertisementService;
